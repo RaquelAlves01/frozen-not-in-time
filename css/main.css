@@ -12,25 +12,61 @@ html {
 
 h1 {
   color: #990073;
-  text-shadow: 1px 1px 2px #990073;
-  transform: rotate(-5deg);
+  text-shadow: 3px 3px 20px #990073;
+  transform: rotate(-8deg);
 }
 
 p {
   color: #c09;
   transform: rotate(-3deg);
-  text-shadow: 1px 1px 1px #990073;
+  text-shadow: 6px 3px 20px #990073;
   max-width: 19em;
 }
 
-.btn {
+.btn-ghost {
   color: #c09;
-  border: 2px solid #c09;
+  border: 3px solid #c09;
 }
 
 .btn-ghost:hover {
   color: #c09;
   text-shadow: 1px 1px 1px #990073;
-  border: 2px solid #c09;
+  border: 3px solid #c09;
   background-color: #d4fdff;
+}
+
+.cone {
+  background: url("../images/cone.svg") no-repeat center center;
+  position: relative;
+  margin: 215px auto;
+  width: 170px;
+
+}
+
+.mint {
+  position: absolute;
+  width: 135px;
+  left: calc(50% - 54px);
+  bottom: calc(50% - 105px);
+}
+
+.vanilla {
+  position: absolute;
+  width: 135px;
+  left: calc(50% - 54px);
+  bottom: calc(50% - -25px);
+}
+
+.chocolate {
+  position: absolute;
+  width: 135px;
+  left: calc(50% - 54px);
+  bottom: calc(50% - 45px);
+}
+
+.cherry {
+  position: absolute;
+  width: 35px;
+  left: calc(50% - 45px);
+  bottom: calc(50% - -105px);
 }
