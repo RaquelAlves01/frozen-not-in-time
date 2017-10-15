@@ -12,8 +12,8 @@ html {
 
 h1 {
   color: #990073;
-  transform-origin: left center;
-  transform: rotate(-7deg);
+  transform-origin: left bottom;
+  transform: rotate(-9deg);
 }
 
 p {
@@ -47,7 +47,7 @@ p {
   height: 165px;
   left: calc(50% - 60px);
   top: calc(50% - -69px);
-  animation: cone 900ms linear forwards;
+  animation: cone 1700ms linear forwards;
 }
 
 .mint {
@@ -55,7 +55,8 @@ p {
   width: 132px;
   left: calc(50% - 64px);
   top: calc(50% - 19px);
-  animation: mint 1050ms linear forwards;
+  top: calc(50% - 102px);
+  animation: mint 1800ms linear forwards;
 }
 
 .vanilla {
@@ -63,7 +64,7 @@ p {
   width: 132px;
   left: calc(50% - 68px);
   top: calc(50% - 174px);
-  animation: vanilla 1250ms linear forwards;
+  animation: vanilla 2000ms linear forwards;
 }
 
 .chocolate {
@@ -71,7 +72,7 @@ p {
   width: 132px;
   left: calc(50% - 60px);
   top: calc(50% - 102px);
-  animation: chocolate 1150ms linear forwards;
+  animation: chocolate 1850ms linear forwards;
 }
 
 .cherry {
@@ -79,11 +80,11 @@ p {
   width: 50px;
   left: calc(50% - 24px);
   top: calc(50% - 224px);
-  animation: cherry 2900ms linear forwards;
+  animation: cherry 2400ms linear forwards;
 }
 
 .text-box {
-  animation: opacity 3s linear forwards;
+  animation: opacity 2500ms linear forwards;
 }
 
 @keyframes opacity {
@@ -107,10 +108,12 @@ p {
 @keyframes cone {
 
   0% {
+    opacity: .5;
     top: -1000px;
   }
 
   100% {
+    opacity: 1;
     top: calc(50% - -69px);
   }
 
@@ -119,10 +122,12 @@ p {
 @keyframes mint {
 
   0% {
+    opacity: .5;
     top: -1000px;
   }
 
   100% {
+    opacity: 1;
     top: calc(50% - 19px);
   }
 
@@ -131,10 +136,12 @@ p {
 @keyframes chocolate {
 
   0% {
+    opacity: .5;
     top: -1000px;
   }
 
   100% {
+    opacity: 1;
     top: calc(50% - 102px);
   }
 
@@ -143,10 +150,12 @@ p {
 @keyframes vanilla {
 
   0% {
+    opacity: .5;
     top: -1000px;
   }
 
   100% {
+    opacity: 1;
     top: calc(50% - 174px);
   }
 
@@ -155,23 +164,13 @@ p {
 @keyframes cherry {
 
   0% {
+    opacity: .5;
     top: -1000px;
   }
 
   100% {
+    opacity: 1;
     top: calc(50% - 224px);
-  }
-
-}
-
-@media only screen and (min-width: 90em) {
-
-  .text-box {
-    padding-top: 1.5em;
-  }
-
-  div p {
-    margin-bottom: 0;
   }
 
 }
