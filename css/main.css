@@ -1,5 +1,5 @@
 html {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .main-content {
@@ -12,61 +12,166 @@ html {
 
 h1 {
   color: #990073;
-  text-shadow: 3px 3px 20px #990073;
-  transform: rotate(-8deg);
+  transform-origin: left center;
+  transform: rotate(-7deg);
 }
 
 p {
   color: #c09;
-  transform: rotate(-3deg);
-  text-shadow: 6px 3px 20px #990073;
+  transform: rotate(-5deg);
+  transform-origin: left center;
   max-width: 19em;
 }
 
 .btn-ghost {
   color: #c09;
-  border: 3px solid #c09;
+  border: 3px solid #990073;
 }
 
 .btn-ghost:hover {
   color: #c09;
-  text-shadow: 1px 1px 1px #990073;
+  text-shadow: 1px 1px 30px #990073;
   border: 3px solid #c09;
   background-color: #d4fdff;
 }
 
-.cone {
-  background: url("../images/cone.svg") no-repeat center center;
+.ice-cream-cone {
   position: relative;
-  margin: 215px auto;
-  width: 170px;
+  margin: 160px auto;
+  height: 160px;
+}
 
+.cone {
+  position: absolute;
+  width: 125px;
+  height: 165px;
+  left: calc(50% - 60px);
+  top: calc(50% - -69px);
+  animation: cone 900ms linear forwards;
 }
 
 .mint {
   position: absolute;
-  width: 135px;
-  left: calc(50% - 54px);
-  bottom: calc(50% - 105px);
+  width: 132px;
+  left: calc(50% - 64px);
+  top: calc(50% - 19px);
+  animation: mint 1050ms linear forwards;
 }
 
 .vanilla {
   position: absolute;
-  width: 135px;
-  left: calc(50% - 54px);
-  bottom: calc(50% - -25px);
+  width: 132px;
+  left: calc(50% - 68px);
+  top: calc(50% - 174px);
+  animation: vanilla 1250ms linear forwards;
 }
 
 .chocolate {
   position: absolute;
-  width: 135px;
-  left: calc(50% - 54px);
-  bottom: calc(50% - 45px);
+  width: 132px;
+  left: calc(50% - 60px);
+  top: calc(50% - 102px);
+  animation: chocolate 1150ms linear forwards;
 }
 
 .cherry {
   position: absolute;
-  width: 35px;
-  left: calc(50% - 45px);
-  bottom: calc(50% - -105px);
+  width: 50px;
+  left: calc(50% - 24px);
+  top: calc(50% - 224px);
+  animation: cherry 2900ms linear forwards;
+}
+
+.text-box {
+  animation: opacity 3s linear forwards;
+}
+
+@keyframes opacity {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    filter: blur(30px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: calc(50% - -69px);
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: calc(50% - 19px);
+  }
+
+}
+
+@keyframes chocolate {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: calc(50% - 102px);
+  }
+
+}
+
+@keyframes vanilla {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: calc(50% - 174px);
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: calc(50% - 224px);
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .text-box {
+    padding-top: 1.5em;
+  }
+
+  div p {
+    margin-bottom: 0;
+  }
+
 }
